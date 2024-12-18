@@ -1,6 +1,7 @@
+"use client";
 import React from 'react';
 
-const page = () => {
+const Page = () => {
   const collectionData = [
     { id: 1, name: "Argan Oil Hair Serum", price: 1500, Description: "Nourishing serum for silky and smooth hair", image: `/3hair-serum.jpg` },
     { id: 2, name: "Loreal Hair Treatment Oil", price: 2000, Description: "Professional-grade Loreal treatment for frizz-free hair", image: `/4-hairgrowth-serum.jpg` },
@@ -53,4 +54,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

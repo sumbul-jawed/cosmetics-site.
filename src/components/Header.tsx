@@ -33,9 +33,9 @@ export default function Header() {
             <div className="hidden md:flex justify-center space-x-7">
               <Link href="/" className="hover:text-red-400">Home</Link>
               <Link href="/Makeup" className="hover:text-red-400">MakeUp</Link>
-              <Link href="/Skin" className="hover:text-red-400">Skin Care</Link>
-              <Link href="/Hair" className="hover:text-red-400">Hair Care</Link>
-              <Link href="/Fragrance" className="hover:text-red-400">Fragrances</Link>
+              <Link href="/Skin" className=" hover:text-red-400">Skin Care</Link>
+              <Link href="/Hair" className=" hover:text-red-400">Hair Care</Link>
+              <Link href="/Fragrance" className=" hover:text-red-400">Fragrances</Link>
             </div>
 
             {/* Hamburger Menu */}
@@ -61,9 +61,9 @@ export default function Header() {
           <div className="md:hidden bg-[#a6245a] text-white p-4">
             <Link href="/" className="block py-2 hover:text-red-400">Home</Link>
             <Link href="/Makeup" className="block py-2 hover:text-red-400">MakeUp</Link>
-            <Link href="/SkinCare" className="block py-2 hover:text-red-400">Skin Care</Link>
-            <Link href="/HairCare" className="block py-2 hover:text-red-400">Hair Care</Link>
-            <Link href="/Fragrances" className="block py-2 hover:text-red-400">Fragrances</Link>
+            <Link href="/Skin" className="block py-2 hover:text-red-400">Skin Care</Link>
+            <Link href="/Hair" className="block py-2 hover:text-red-400">Hair Care</Link>
+            <Link href="/Fragrance" className="block py-2 hover:text-red-400">Fragrances</Link>
             <div className="flex space-x-3 mt-4">
               <input
                 type="text"

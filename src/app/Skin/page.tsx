@@ -1,6 +1,7 @@
+"use client";
 import React from 'react';
 
-const page = () => {
+const Page = () => {
   const collectionData = [
     { id: 1, name: "24K Gold Facial", price: 2500, Description: "Luxury facial kit enriched with 24K gold for glowing skin", image: `/24k-goldfacial.jpg` },
     { id: 2, name: "6pc Golden pearl Facial Kit", price: 1000, Description: "Complete facial kit for home spa experience", image: `/6pc-facial.jpg` },
@@ -28,7 +29,6 @@ const page = () => {
     { id: 24, name: "Nivea Lotion", price: 1200, Description: "Rich moisturizing lotion for smooth skin", image: `/nivea-lotion.jpg` },
     { id: 25, name: "Care Lotion", price: 800, Description: "Gentle care lotion with aloe vera", image: `/care-lotion.jpg` },
     { id: 26, name: "Hair Gel", price: 1000, Description: "Strong hold hair gel for long-lasting style", image: `/hair-gel.jpg` },
-
   ];
 
   return (
@@ -43,14 +43,14 @@ const page = () => {
             <img
               src={skinCare.image}
               alt={skinCare.name}
-              className="relative flex justify-center items-center h-60"
+              className="w-full h-60 object-cover"
             />
           </div>
 
           {/* Card Content */}
           <div className="p-4">
             <h3 className="text-xl font-semibold text-gray-800">{skinCare.name}</h3>
-            <p className="text-sm text-gray-600 mt-2">{skinCare.Description}</p>
+            <span className="text-sm text-gray-600 mt-2">{skinCare.Description}</span>
             <div className="text-lg font-bold text-pink-500 mt-2">
               Rs. {skinCare.price}
             </div>
@@ -58,7 +58,7 @@ const page = () => {
 
           {/* Add to Cart Button */}
           <div className="p-4 pt-0">
-            <button className="w-full bg-pink-500 text-white py-2 rounded hover:bg-pink-600 hover:scale-105 transition-all duration-200">
+            <button className="w-full bg-pink-500 text-white py-2 rounded hover:bg-pink-600 transition-all duration-200">
               Add to Cart
             </button>
           </div>
@@ -68,4 +68,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
