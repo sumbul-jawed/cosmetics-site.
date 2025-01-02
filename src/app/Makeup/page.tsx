@@ -1,7 +1,7 @@
 "use client";
-import React from 'react';
+import React from "react";
 
-const page = () => {
+const Page = () => {
   const collectionData = [
     { id: 1, name: "Eye Pencil", price: 500, Description: "Long-lasting waterproof eye pencil", image: `/eye-pencil.jpg` },
     { id: 2, name: "Stamp Eyeliner", price: 800, Description: "Dual-ended winged eyeliner stamp", image: `/stamp.jpg` },
@@ -23,10 +23,10 @@ const page = () => {
     { id: 18, name: "Glitter Palette", price: 3500, Description: "Sparkling glitter palette for bold looks", image: `/glitter.jpg` },
     { id: 19, name: "96-eyeshadow Palette", price: 4000, Description: "Compact blush palette with 96 shades", image: `/96plattes.jpg` },
     { id: 20, name: "8 different Blushes color", price: 1500, Description: "Smooth powder blush for a natural flush", image: `/8blush.jpg` },
-    { id: 20, name: "Pinkish Blush", price: 800, Description: "Smooth pinkish blush for a natural look", image: `/blush.jpg` },
-    { id: 20, name: "Miss Rose Face Powder", price: 1000, Description: "Smooth face powder for fix foundation", image: `/missrosepowder.jpg` },
-    { id: 21, name: "Makeup Fixer", price: 1500, Description: "Setting spray to lock in your look", image: `/fixer.jpg` },
-    { id: 21, name: "Makeup Fixer", price: 1600, Description: "Setting spray to lock in your look", image: `/makefixer.jpg` },
+    { id: 21, name: "Pinkish Blush", price: 800, Description: "Smooth pinkish blush for a natural look", image: `/blush.jpg` },
+    { id: 22, name: "Miss Rose Face Powder", price: 1000, Description: "Smooth face powder for fix foundation", image: `/missrosepowder.jpg` },
+    { id: 23, name: "Makeup Fixer", price: 1500, Description: "Setting spray to lock in your look", image: `/fixer.jpg` },
+    { id: 24, name: "Makeup Fixer (Premium)", price: 1600, Description: "Setting spray to lock in your look", image: `/makefixer.jpg` },
   ];
 
   return (
@@ -39,7 +39,6 @@ const page = () => {
           {/* Product Image */}
           <div className="relative">
             <img src={makeup.image} alt={makeup.name} className="relative flex justify-center items-center h-60" />
-            
           </div>
 
           {/* Card Content */}
@@ -61,4 +60,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

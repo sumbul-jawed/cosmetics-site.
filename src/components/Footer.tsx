@@ -20,7 +20,7 @@ function Footer() {
           <div>
             <h3 className="text-2xl font-normal mb-4 text-black">Contact Us</h3>
             <p className="mt-2">
-              Questions? We're here for you <br /> Monday - Saturday 9am-6pm.
+              Questions? We&apos;re here for you <br /> Monday - Saturday 9am-6pm.
             </p>
             <p className="flex items-center space-x-3 mt-4">
               <MdOutlinePhoneCallback size={20} />
